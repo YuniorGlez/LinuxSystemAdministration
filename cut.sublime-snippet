@@ -1,0 +1,15 @@
+<snippet>
+	<content>
+
+<![CDATA[
+cut ${1:-d} ${2:} ${3:-f} ${4:} 
+${5:# Cut sirve para separar un input segun:
+#   -d para especificar un delimitador 
+#   -f para elegir los campos. 1-5 ó 1,3,5
+}
+]]>
+
+	</content>
+		<tabTrigger>cut</tabTrigger> 
+		<scope>source.shell</scope> 
+</snippet>

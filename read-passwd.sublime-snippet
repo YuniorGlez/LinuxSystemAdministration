@@ -1,0 +1,16 @@
+<snippet>
+	<content><![CDATA[
+exec ${1:4}</etc/passwd
+IFS=: #Para establecer el limitador del read
+while read -u${1:4} user pass uid guid c5 pathHome pathShell
+do
+	if [[ $uid -gt 499 ]]
+	then
+		echo $user >> usuarios_normales
+	fi
+done
+$0
+]]></content>
+	<tabTrigger>readpasswd</tabTrigger>
+	<scope>source.shell</scope>
+</snippet>

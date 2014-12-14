@@ -1,0 +1,16 @@
+<snippet>
+	<content><![CDATA[
+#!/bin/ksh
+
+# ${1:Comprobacion de argumentos}
+if [[ \$# -lt ${2:1} ]]
+then
+	print -u2 "${3:Llamada incorrecta se necesitan minimo ${2:1} argumentos}"
+	exit ${4:1}
+fi
+
+${5:}
+]]></content>
+	<tabTrigger>control</tabTrigger> 
+	<scope>source.shell</scope> 
+</snippet>

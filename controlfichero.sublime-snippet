@@ -1,0 +1,22 @@
+<snippet>
+	<content><![CDATA[
+#!/bin/ksh
+
+# ${1:Comprobacion de argumentos}
+if [[ \$# -lt ${2:1} ]]
+then
+	print -u2 "${3:Llamada incorrecta. Se necesitan minimo ${2:1} argumentos}"
+	exit ${4:1}
+fi
+
+# ${5:El argumento ${6:1} es una ruta a un archivo existente?}
+if [[ ! -a \$${6:1} ]] 
+then
+	print -u2 "El fichero \$${6:1} no existe"
+	exit ${7:2}
+fi
+
+]]></content>
+	<tabTrigger>controlFichero</tabTrigger> 
+	<scope>source.shell</scope> 
+</snippet>

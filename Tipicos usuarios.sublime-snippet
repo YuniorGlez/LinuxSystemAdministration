@@ -1,0 +1,8 @@
+<snippet>
+	<content><![CDATA[
+	La orden useradd para añadir usuarios, la orden gruopadd para añadir
+	un nuevo grupo , 
+]]></content>
+	<tabTrigger>tipicos usuarios</tabTrigger> 
+	<scope>source.shell</scope> 
+</snippet>

@@ -1,0 +1,11 @@
+<snippet>
+	<content><![CDATA[
+	La orden ps para ver los procesos, la orden jobs para ver las 
+	tareas, 
+	Tanto ps como jobs tiene su propio snippet con descripción
+	detallada de sus argumentos
+
+]]></content>
+	<tabTrigger>Tipicos procesos</tabTrigger> 
+	<scope>source.shell</scope> 
+</snippet>

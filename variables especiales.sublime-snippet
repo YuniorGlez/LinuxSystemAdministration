@@ -1,0 +1,14 @@
+<snippet>
+	<content><![CDATA[
+Variables especiales:
+/$0: Nombre del shell-script que se está ejecutando
+/$n: Parámetro o argumento pasado al shell-script en la posición n, n=1,2
+/$#: Número de argumentos
+/$*: Lista de todos los argumentos.
+/$$: PID del proceso que se está ejecutando
+/$!: PID del último proceso ejecutado
+/$?: Salida del último proceso ejecutando
+]]></content>
+	<tabTrigger>variables especiales</tabTrigger> 
+	<scope>source.shell</scope> 
+</snippet>
